@@ -1,0 +1,16 @@
+<h1>New Album??!?!?!</h1>
+  <form action="<%= new_band_album_url %>" method="post">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+
+    <label for="">Album Name</label>
+    <input type="text" name="album[album_name]" value=""><br>
+    <label for="">Album Type</label>
+    <input type="radio" name="album[album_type]" value="Studio"><br>
+    <label for="">Album Type</label>
+    <input type="radio" name="album[album_type]" value="Live"><br>
+
+    <input type="submit">
+  </form>
